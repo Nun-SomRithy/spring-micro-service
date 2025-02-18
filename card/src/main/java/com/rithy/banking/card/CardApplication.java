@@ -1,4 +1,4 @@
-package com.rithy.banking.loan;
+package com.rithy.banking.card;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
