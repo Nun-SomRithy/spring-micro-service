@@ -30,15 +30,9 @@ public class LoanController {
         return  ResponseEntity.ok(loanService.getAll()) ;
     }
 
-//    @GetMapping("{customerId}")
-//    public ResponseEntity<?> getByCustomerId(
-//            @RequestHeader("pisethbank-correlation-id") String correlationId,
-//            @PathVariable Long customerId){
-//
-//        log.debug("fetchLoanDetail method start");
-//        List<Loan> loans = loanService.getByCustomerId(customerId);
-//        log.debug("fetchLoanDetail method end");
-//        return ResponseEntity.ok(loans);
-//    }
+    @GetMapping("{customerId}")
+    public ResponseEntity<?> getByCustomerId(@PathVariable Long customerId){
+        return   ResponseEntity.ok(loanService.getByCustomerId(customerId));
+    }
 
 }
